@@ -9,8 +9,6 @@ import ru.gothmog.core.model.TrafficLightImpl;
  */
 public class Start {
     public static void main(String[] args) {
-//        TrafficLight trafficLight = new TrafficLightImpl();
-//        trafficLight.drawColorByMinute();
         Light trafficLight = new TrafficLightImpl();
         trafficLight.drawColorByMinuteTwo();
     }

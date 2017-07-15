@@ -31,9 +31,9 @@ public class TrafficLightImpl implements Light {
                     System.out.println("Выход: да/нет ");
                     exit = reader.next();
                 } catch (InputMismatchException e) {
-                    System.out.println("Минута должна быть цифрой.");
-                    System.out.println("Минута должна быть положительной");
-                    System.out.println("Время свечения всех цветов не должно быть равно нулю.");
+                    System.err.println("Минута должна быть цифрой." + e);
+                    System.err.println("Минута должна быть положительной" + e);
+                    System.err.println("Время свечения всех цветов не должно быть равно нулю." + e);
                     exit = reader.next();
                 }
             }
@@ -83,9 +83,9 @@ public class TrafficLightImpl implements Light {
                     System.out.println("Выход: да/нет ");
                     exit = reader.next();
                 } catch (InputMismatchException e) {
-                    System.out.println("Минута должна быть цифрой.");
-                    System.out.println("Минута должна быть положительной");
-                    System.out.println("Время свечения всех цветов не должно быть равно нулю.");
+                    System.err.println("Минута должна быть цифрой." + e);
+                    System.err.println("Минута должна быть положительной" + e);
+                    System.err.println("Время свечения всех цветов не должно быть равно нулю." + e);
                     exit = reader.next();
                 }
             }
@@ -95,7 +95,7 @@ public class TrafficLightImpl implements Light {
     }
 
     /**
-     * Определяет цвет в указанное время. 
+     * Определяет цвет в указанное время.
      * @param time При которой необходимо вычислить цвет.
      * @return Color цвет который будет отображаться в это время.
      */
